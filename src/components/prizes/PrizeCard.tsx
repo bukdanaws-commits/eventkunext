@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Gift, MoreVertical, Edit, Trash2, Image, Award } from 'lucide-react';
+import { Gift, MoreVertical, Edit, Trash2, Image as ImageIcon, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -88,7 +88,7 @@ export function PrizeCard({
             className="absolute bottom-3 right-3"
             onClick={onImageUpload}
           >
-            <Image className="h-4 w-4 mr-1" />
+            <ImageIcon className="h-4 w-4 mr-1" />
             Upload
           </Button>
         )}
@@ -119,7 +119,7 @@ export function PrizeCard({
                 </DropdownMenuItem>
                 {onImageUpload && (
                   <DropdownMenuItem onClick={onImageUpload}>
-                    <Image className="mr-2 h-4 w-4" />
+                    <ImageIcon className="mr-2 h-4 w-4" />
                     Upload Gambar
                   </DropdownMenuItem>
                 )}
